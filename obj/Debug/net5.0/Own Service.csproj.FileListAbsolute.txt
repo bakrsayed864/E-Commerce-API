@@ -1,0 +1,269 @@
+D:\bakr\Own Service\bin\Debug\net5.0\appsettings.Development.json
+D:\bakr\Own Service\bin\Debug\net5.0\appsettings.json
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.exe
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.deps.json
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.json
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.dev.json
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Own Service.pdb
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\bakr\Own Service\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\bakr\Own Service\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+D:\bakr\Own Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\bakr\Own Service\bin\Debug\net5.0\System.Runtime.Caching.dll
+D:\bakr\Own Service\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.AssemblyReference.cache
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfoInputs.cache
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfo.cs
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.CoreCompileInputs.cache
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cs
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cache
+D:\bakr\Own Service\obj\Debug\net5.0\scopedcss\bundle\Own Service.styles.css
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\Own Service.StaticWebAssets.Manifest.cache
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\Own Service.StaticWebAssets.Pack.cache
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\msbuild.Own Service.Microsoft.AspNetCore.StaticWebAssets.props
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\msbuild.build.Own Service.props
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Own Service.props
+D:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Own Service.props
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.RazorTargetAssemblyInfo.cache
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.CopyComplete
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.dll
+D:\bakr\Own Service\obj\Debug\net5.0\refint\Own Service.dll
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.pdb
+D:\bakr\Own Service\obj\Debug\net5.0\Own Service.genruntimeconfig.cache
+D:\bakr\Own Service\obj\Debug\net5.0\ref\Own Service.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Humanizer.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+D:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\bakr\Own Service\bin\Debug\net5.0\appsettings.Development.json
+F:\bakr\Own Service\bin\Debug\net5.0\appsettings.json
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.exe
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.deps.json
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.json
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.dev.json
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Own Service.pdb
+F:\bakr\Own Service\bin\Debug\net5.0\Humanizer.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\bakr\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\bakr\Own Service\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\bakr\Own Service\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\bakr\Own Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\bakr\Own Service\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\bakr\Own Service\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\bakr\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.AssemblyReference.cache
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfoInputs.cache
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfo.cs
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.CoreCompileInputs.cache
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cs
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cache
+F:\bakr\Own Service\obj\Debug\net5.0\scopedcss\bundle\Own Service.styles.css
+F:\bakr\Own Service\obj\Debug\net5.0\staticwebassets\Own Service.StaticWebAssets.Manifest.cache
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.RazorTargetAssemblyInfo.cache
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.csproj.CopyComplete
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.dll
+F:\bakr\Own Service\obj\Debug\net5.0\refint\Own Service.dll
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.pdb
+F:\bakr\Own Service\obj\Debug\net5.0\Own Service.genruntimeconfig.cache
+F:\bakr\Own Service\obj\Debug\net5.0\ref\Own Service.dll
+F:\Own Service\bin\Debug\net5.0\appsettings.Development.json
+F:\Own Service\bin\Debug\net5.0\appsettings.json
+F:\Own Service\bin\Debug\net5.0\Own Service.exe
+F:\Own Service\bin\Debug\net5.0\Own Service.deps.json
+F:\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.json
+F:\Own Service\bin\Debug\net5.0\Own Service.runtimeconfig.dev.json
+F:\Own Service\bin\Debug\net5.0\Own Service.dll
+F:\Own Service\bin\Debug\net5.0\Own Service.pdb
+F:\Own Service\bin\Debug\net5.0\Humanizer.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Own Service\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Own Service\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Own Service\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Own Service\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Own Service\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\Own Service\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Own Service\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Own Service\obj\Debug\net5.0\Own Service.csproj.AssemblyReference.cache
+F:\Own Service\obj\Debug\net5.0\Own Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfoInputs.cache
+F:\Own Service\obj\Debug\net5.0\Own Service.AssemblyInfo.cs
+F:\Own Service\obj\Debug\net5.0\Own Service.csproj.CoreCompileInputs.cache
+F:\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cs
+F:\Own Service\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cache
+F:\Own Service\obj\Debug\net5.0\scopedcss\bundle\Own Service.styles.css
+F:\Own Service\obj\Debug\net5.0\staticwebassets\Own Service.StaticWebAssets.Manifest.cache
+F:\Own Service\obj\Debug\net5.0\Own Service.RazorTargetAssemblyInfo.cache
+F:\Own Service\obj\Debug\net5.0\Own Service.csproj.CopyComplete
+F:\Own Service\obj\Debug\net5.0\Own Service.dll
+F:\Own Service\obj\Debug\net5.0\refint\Own Service.dll
+F:\Own Service\obj\Debug\net5.0\Own Service.pdb
+F:\Own Service\obj\Debug\net5.0\Own Service.genruntimeconfig.cache
+F:\Own Service\obj\Debug\net5.0\ref\Own Service.dll
+F:\Own Service\bin\Debug\net5.0\Castle.Core.dll
+F:\Own Service\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+F:\E_Commerce API\bin\Debug\net5.0\appsettings.Development.json
+F:\E_Commerce API\bin\Debug\net5.0\appsettings.json
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.exe
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.deps.json
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.runtimeconfig.json
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.runtimeconfig.dev.json
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.dll
+F:\E_Commerce API\bin\Debug\net5.0\Own Service.pdb
+F:\E_Commerce API\bin\Debug\net5.0\Castle.Core.dll
+F:\E_Commerce API\bin\Debug\net5.0\Humanizer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.csproj.AssemblyReference.cache
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.AssemblyInfoInputs.cache
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.AssemblyInfo.cs
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.csproj.CoreCompileInputs.cache
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cs
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cache
+F:\E_Commerce API\obj\Debug\net5.0\scopedcss\bundle\Own Service.styles.css
+F:\E_Commerce API\obj\Debug\net5.0\staticwebassets\Own Service.StaticWebAssets.Manifest.cache
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.RazorTargetAssemblyInfo.cache
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.csproj.CopyComplete
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.dll
+F:\E_Commerce API\obj\Debug\net5.0\refint\Own Service.dll
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.pdb
+F:\E_Commerce API\obj\Debug\net5.0\Own Service.genruntimeconfig.cache
+F:\E_Commerce API\obj\Debug\net5.0\ref\Own Service.dll

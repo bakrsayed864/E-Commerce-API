@@ -1,0 +1,65 @@
+F:\Own Service\bin\Release\net5.0\appsettings.Development.json
+F:\Own Service\bin\Release\net5.0\appsettings.json
+F:\Own Service\bin\Release\net5.0\Own Service.exe
+F:\Own Service\bin\Release\net5.0\Own Service.deps.json
+F:\Own Service\bin\Release\net5.0\Own Service.runtimeconfig.json
+F:\Own Service\bin\Release\net5.0\Own Service.runtimeconfig.dev.json
+F:\Own Service\bin\Release\net5.0\Own Service.dll
+F:\Own Service\bin\Release\net5.0\Own Service.pdb
+F:\Own Service\bin\Release\net5.0\Humanizer.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.Identity.Client.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\Own Service\bin\Release\net5.0\Microsoft.OpenApi.dll
+F:\Own Service\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\Own Service\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\Own Service\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\Own Service\bin\Release\net5.0\System.Configuration.ConfigurationManager.dll
+F:\Own Service\bin\Release\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\Own Service\bin\Release\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Own Service\bin\Release\net5.0\System.Runtime.Caching.dll
+F:\Own Service\bin\Release\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\Own Service\bin\Release\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\Own Service\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\Own Service\bin\Release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\Own Service\obj\Release\net5.0\Own Service.csproj.AssemblyReference.cache
+F:\Own Service\obj\Release\net5.0\Own Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\Own Service\obj\Release\net5.0\Own Service.AssemblyInfoInputs.cache
+F:\Own Service\obj\Release\net5.0\Own Service.AssemblyInfo.cs
+F:\Own Service\obj\Release\net5.0\Own Service.csproj.CoreCompileInputs.cache
+F:\Own Service\obj\Release\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cs
+F:\Own Service\obj\Release\net5.0\Own Service.MvcApplicationPartsAssemblyInfo.cache
+F:\Own Service\obj\Release\net5.0\scopedcss\bundle\Own Service.styles.css
+F:\Own Service\obj\Release\net5.0\staticwebassets\Own Service.StaticWebAssets.Manifest.cache
+F:\Own Service\obj\Release\net5.0\Own Service.RazorTargetAssemblyInfo.cache
+F:\Own Service\obj\Release\net5.0\Own Service.csproj.CopyComplete
+F:\Own Service\obj\Release\net5.0\Own Service.dll
+F:\Own Service\obj\Release\net5.0\refint\Own Service.dll
+F:\Own Service\obj\Release\net5.0\Own Service.pdb
+F:\Own Service\obj\Release\net5.0\Own Service.genruntimeconfig.cache
+F:\Own Service\obj\Release\net5.0\ref\Own Service.dll

@@ -1,0 +1,67 @@
+F:\E_Commerce API\bin\Debug\net5.0\appsettings.Development.json
+F:\E_Commerce API\bin\Debug\net5.0\appsettings.json
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.exe
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.deps.json
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.runtimeconfig.json
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.runtimeconfig.dev.json
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.dll
+F:\E_Commerce API\bin\Debug\net5.0\E_Commerce API.pdb
+F:\E_Commerce API\bin\Debug\net5.0\Castle.Core.dll
+F:\E_Commerce API\bin\Debug\net5.0\Humanizer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\E_Commerce API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\E_Commerce API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\E_Commerce API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\E_Commerce API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.csproj.AssemblyReference.cache
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.GeneratedMSBuildEditorConfig.editorconfig
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.AssemblyInfoInputs.cache
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.AssemblyInfo.cs
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.csproj.CoreCompileInputs.cache
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.MvcApplicationPartsAssemblyInfo.cs
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.MvcApplicationPartsAssemblyInfo.cache
+F:\E_Commerce API\obj\Debug\net5.0\scopedcss\bundle\E_Commerce API.styles.css
+F:\E_Commerce API\obj\Debug\net5.0\staticwebassets\E_Commerce API.StaticWebAssets.Manifest.cache
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.RazorTargetAssemblyInfo.cache
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.csproj.CopyComplete
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.dll
+F:\E_Commerce API\obj\Debug\net5.0\refint\E_Commerce API.dll
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.pdb
+F:\E_Commerce API\obj\Debug\net5.0\E_Commerce API.genruntimeconfig.cache
+F:\E_Commerce API\obj\Debug\net5.0\ref\E_Commerce API.dll
