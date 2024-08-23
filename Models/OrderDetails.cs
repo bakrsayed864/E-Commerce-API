@@ -9,10 +9,10 @@ namespace Own_Service.Models
 
         [ForeignKey("order")]
         public int OrderId { get; set; }
-        public   Order order { get; set; }
+        public virtual  Order order { get; set; }
 
         [ForeignKey("product")]
         public int ProductId { get; set; }
-        public  Product product { get; set; }
+        public virtual Product product { get; set; }
     }
 }

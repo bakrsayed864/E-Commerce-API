@@ -137,3 +137,70 @@ D:\college\projects\Git_Hub\E_Commerce API\obj\Debug\net5.0\refint\E_Commerce AP
 D:\college\projects\Git_Hub\E_Commerce API\obj\Debug\net5.0\E_Commerce API.pdb
 D:\college\projects\Git_Hub\E_Commerce API\obj\Debug\net5.0\E_Commerce API.genruntimeconfig.cache
 D:\college\projects\Git_Hub\E_Commerce API\obj\Debug\net5.0\ref\E_Commerce API.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\appsettings.Development.json
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\appsettings.json
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.exe
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.deps.json
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.runtimeconfig.json
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.runtimeconfig.dev.json
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\E_Commerce API.pdb
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Castle.Core.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Humanizer.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\System.Runtime.Caching.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+F:\e-commerce git hub\E-Commerce-API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.csproj.AssemblyReference.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.GeneratedMSBuildEditorConfig.editorconfig
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.AssemblyInfoInputs.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.AssemblyInfo.cs
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.csproj.CoreCompileInputs.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.MvcApplicationPartsAssemblyInfo.cs
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.MvcApplicationPartsAssemblyInfo.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\scopedcss\bundle\E_Commerce API.styles.css
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\staticwebassets\E_Commerce API.StaticWebAssets.Manifest.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.RazorTargetAssemblyInfo.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.csproj.CopyComplete
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.dll
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\refint\E_Commerce API.dll
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.pdb
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.genruntimeconfig.cache
+F:\e-commerce git hub\E-Commerce-API\obj\Debug\net5.0\ref\E_Commerce API.dll

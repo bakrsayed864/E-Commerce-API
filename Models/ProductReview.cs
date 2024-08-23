@@ -10,10 +10,10 @@ namespace Own_Service.Models
         
         [ForeignKey("product")]
         public int ProductId { get; set; }
-        public   Product product { get; set; }
+        public virtual Product product { get; set; }
 
         [ForeignKey("customer")]
         public int CustomerId { get; set; }
-        public  Customer customer { get; set; }
+        public virtual Customer customer { get; set; }
     }
 }

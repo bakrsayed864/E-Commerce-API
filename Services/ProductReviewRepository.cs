@@ -55,7 +55,7 @@ namespace Own_Service.Services
         {
             //var reviews3 = _commerceDbContext.productsReviews.AsNoTracking();
             int customerId =getCustomerId(userId);
-            List<ProductReview> reviews = _commerceDbContext.productsReviews.Where(p => p.ProductId == productId && p.CustomerId == customerId).ToList();
+            List<ProductReview> reviews = _commerceDbContext.productsReviews.Where(p => p.ProductId == productId && p.CustomerId == customerId).Include(p=>p.customer).ToList();
             if (reviews.Count==0)
                 return null;
             List<ProductReviewWithCustomerNameDTO> result = new List<ProductReviewWithCustomerNameDTO>();

@@ -57,7 +57,7 @@ namespace Own_Service
            //---------
             services.AddDbContext<CommerceDbContext>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("primaryconnection"));
+                options.UseLazyLoadingProxies().UseSqlServer(Configuration.GetConnectionString("primaryconnection"));
             });
             services.AddIdentity<ApplicationUser,IdentityRole>().AddEntityFrameworkStores<CommerceDbContext>();
             //----[Aithorize] use JWT tokens in check authorization
