@@ -1,5 +1,5 @@
 # E-Commerce RESTful API
-<marquee>Movable text example using the HTML marquee tag!</marquee>
+![Movable text example](https://your-link-to-gif.com/moving-text.gif)
 ## Overview
 This project is a comprehensive RESTful API built with .NET Core, designed to power an e-commerce platform. The API offers robust functionality for managing users, products, reviews, orders, and customers. It is suitable for developers looking to integrate or extend e-commerce capabilities in their applications.
 
