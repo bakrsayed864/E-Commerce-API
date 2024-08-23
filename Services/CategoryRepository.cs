@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Own_Service.DTO;
 using Own_Service.Models;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,13 +18,14 @@ namespace Own_Service.Services
         {
             return _commerceDbContext.Categories.ToList();
         }
-        public Category getOne(int id)
+        public CategoryDTO getOne(int id)
         {
-            return _commerceDbContext.Categories.Find(id);
+            var category = _commerceDbContext.Categories.Find(id);
+            return new CategoryDTO { Id=category.Id,Name=category.Name};
         }
-        public int Creat(Category category)
+        public int Creat(CategoryDTO categorydto)
         {
-            _commerceDbContext.Categories.Add(category);
+            _commerceDbContext.Categories.Add(new Category { Name=categorydto.Name,Id=categorydto.Id});
             return _commerceDbContext.SaveChanges();
         }
         public int Update(Category category, int id)

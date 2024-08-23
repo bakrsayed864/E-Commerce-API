@@ -32,14 +32,16 @@ namespace Own_Service.Services
             return _commerceDbContext.SaveChanges();
         }
 
-        public List<Product> getAll()
+        public List<ProductDTO> getAll()
         {
-            return _commerceDbContext.Products.ToList();
+            var products = _commerceDbContext.Products.ToList();
+            return populateResult(products);
         }
 
-        public List<Product> GetByCategory(int id)
+        public List<ProductDTO> GetByCategory(int id)
         {
-            return _commerceDbContext.Products.Where(p => p.CategoryId == id).ToList();
+            var products = _commerceDbContext.Products.Where(p => p.CategoryId == id).ToList();
+            return populateResult(products);
         }
 
         public ProductDTO GetById(int id)
@@ -51,9 +53,10 @@ namespace Own_Service.Services
             return productDTO;
         }
 
-        public List<Product> GetByName(string name)
+        public List<ProductDTO> GetByName(string name)
         {
-            return _commerceDbContext.Products.Where(x => x.Name.Contains(name)).ToList();
+            var products= _commerceDbContext.Products.Where(x => x.Name.Contains(name)).ToList();
+            return populateResult(products);
         }
 
         public int Update(ProductDTO productDto, int id)
@@ -67,7 +70,17 @@ namespace Own_Service.Services
             Oldproduct.Name = productDto.Name;
             return _commerceDbContext.SaveChanges();
         }
-
+        private List<ProductDTO> populateResult(List<Product> products)
+        {
+            List<ProductDTO> result = new List<ProductDTO>();
+            ProductDTO productDTO;
+            foreach (var product in products)
+            {
+                productDTO = mapToProductDTO(product);
+                result.Add(productDTO);
+            }
+            return result;
+        }
         #region mapping DTO
         private Product mapToProduct(ProductDTO productDto)
         {

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Own_Service.DTO;
 using Own_Service.Models;
 using Own_Service.Services;
 
@@ -35,15 +36,15 @@ namespace Own_Service.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Category category)
+        public IActionResult Create(CategoryDTO categorydto)
         {
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
-            int changes=_categoryRepository.Creat(category);
+            int changes=_categoryRepository.Creat(categorydto);
             if (changes == 0)
                 return BadRequest("can not save category");
-            string link = Url.Link("GetOneCategory", new { id = category.Id });
-            return Created(link,category);
+            string link = Url.Link("GetOneCategory", new { id = categorydto.Id });
+            return Created(link,categorydto);
         }
 
         [HttpPut("{id}")]

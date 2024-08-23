@@ -53,9 +53,8 @@ namespace Own_Service.Services
 
         public List<ProductReviewWithCustomerNameDTO> GetAll(int productId,string userId)
         {
-            //var reviews3 = _commerceDbContext.productsReviews.AsNoTracking();
             int customerId =getCustomerId(userId);
-            List<ProductReview> reviews = _commerceDbContext.productsReviews.Where(p => p.ProductId == productId && p.CustomerId == customerId).Include(p=>p.customer).ToList();
+            List<ProductReview> reviews = _commerceDbContext.productsReviews.Where(p => p.ProductId == productId && p.CustomerId == customerId).ToList();
             if (reviews.Count==0)
                 return null;
             List<ProductReviewWithCustomerNameDTO> result = new List<ProductReviewWithCustomerNameDTO>();
@@ -73,7 +72,7 @@ namespace Own_Service.Services
         public List<ProductReviewWithProductNameDTO> GetAll(string userId)
         {
             int customerId=getCustomerId(userId);
-            var reviews = _commerceDbContext.productsReviews.Where(p => p.CustomerId == customerId).ToList();
+            var reviews = _commerceDbContext.productsReviews.Where(p => p.CustomerId == customerId).Include(p=>p.product).ToList();
             if (reviews.Count == 0)
                 return null;
             List<ProductReviewWithProductNameDTO> result = new List<ProductReviewWithProductNameDTO>();
@@ -92,14 +91,15 @@ namespace Own_Service.Services
         public ProductReview GetById(int productId,string userId)
         {
             int customerId = getCustomerId(userId);
-            var ProductReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.ProductId == productId && p.CustomerId == customerId);
-            return (ProductReview) ProductReview;
+            ProductReview productReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.ProductId == productId && p.CustomerId == customerId);
+            return  productReview;
         }
         public ProductReview GetById(int productId, int customerId)
         {
-            var ProductReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.ProductId == productId && p.CustomerId == customerId);
-            return (ProductReview)ProductReview;
+            ProductReview productReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.ProductId == productId && p.CustomerId == customerId);
+            return productReview;
         }
+        //in case the user made a review in a product that reviewed before from the same user, then the old review will be updated with the new one
         public int UpdateReview(ProductReviewDTO productDto, int productId,string userId)
         {
             int customerId=getCustomerId(userId);
