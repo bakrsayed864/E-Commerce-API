@@ -18,6 +18,7 @@ namespace Own_Service.Models
         public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<ProductReview> productsReviews { get; set; }
 
+        public DbSet<UnConfirmedOrder> UnConfirmedOrders { get; set; }
 
     }
 }
