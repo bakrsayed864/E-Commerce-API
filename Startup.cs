@@ -84,6 +84,7 @@ namespace Own_Service
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductReviewRepository, ProductReviewRepository>();
+            services.AddScoped<IUnconfirmedOrderRepository, UnconfirmedOrderRepository>();
 
             //---
             services.AddCors(corsOptions =>

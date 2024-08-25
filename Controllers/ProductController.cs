@@ -34,7 +34,6 @@ namespace Own_Service.Controllers
             {
                 return BadRequest();
             }
-            
         }
 
         [HttpGet]

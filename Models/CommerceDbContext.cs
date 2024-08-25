@@ -6,7 +6,7 @@ namespace Own_Service.Models
     public class CommerceDbContext:IdentityDbContext<ApplicationUser>
     {
         public CommerceDbContext()
-        { }
+        {}
         public CommerceDbContext(DbContextOptions<CommerceDbContext> _options) : base(_options)
         { }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -17,7 +17,6 @@ namespace Own_Service.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<OrderDetails> OrderDetails { get; set; }
         public DbSet<ProductReview> productsReviews { get; set; }
-
         public DbSet<UnConfirmedOrder> UnConfirmedOrders { get; set; }
 
     }
