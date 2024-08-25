@@ -77,14 +77,29 @@ namespace Own_Service.Services
             return DTOlist;
         }
 
-        public List<UnconfirmedOrderDTO> getAll()
+        public List<UnconfirmedOrderWithProductNameDTO> getAll()
         {
-            throw new System.NotImplementedException();
+            var unconfirmedOrders = _commerceContext.UnConfirmedOrders.Include(u => u.product).ToList();
+            if (unconfirmedOrders.Count == 0)
+                return null;
+            List<UnconfirmedOrderWithProductNameDTO> DTOlist = new List<UnconfirmedOrderWithProductNameDTO>();
+            foreach (var unconfOrder in unconfirmedOrders)
+            {
+                DTOlist.Add(new UnconfirmedOrderWithProductNameDTO
+                {
+                    Id = unconfOrder.Id,
+                    ProductName = unconfOrder.product.Name,
+                    Quantity = unconfOrder.Quantity,
+                });
+            }
+            return DTOlist;
         }
 
         public UnconfirmedOrderWithProductNameDTO getById(int unconfOrdId)
         {
             var unconfOrder = _commerceContext.UnConfirmedOrders.Find(unconfOrdId);
+            if (unconfOrder == null)
+                return null;
             return new UnconfirmedOrderWithProductNameDTO { Id=unconfOrder.Id,ProductName=unconfOrder.product.Name,Quantity=unconfOrder.Quantity};
         }
         public int getProductQuantity(int productId)
@@ -95,11 +110,6 @@ namespace Own_Service.Services
         public int getCustomerId(string userId)
         {
             return _commerceContext.Customers.AsNoTracking().FirstOrDefault(c => c.UserId == userId).Id;
-        }
-
-        List<UnconfirmedOrderWithProductNameDTO> IUnconfirmedOrderRepository.getAll()
-        {
-            throw new NotImplementedException();
         }
     }
 }

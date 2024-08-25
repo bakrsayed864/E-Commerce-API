@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Own_Service.DTO;
 using Own_Service.Models;
@@ -10,6 +11,7 @@ namespace Own_Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UnconfirmedOrderController : ControllerBase
     {
         private readonly IUnconfirmedOrderRepository _unconfirmedOrderRepo;
@@ -37,12 +39,20 @@ namespace Own_Service.Controllers
             };
         }
         [HttpGet]
-        public IActionResult getAll()
+        public IActionResult getUserUncofirmedOrders()
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if(userId == null)
-                return Unauthorized();
             List<UnconfirmedOrderWithProductNameDTO> list = _unconfirmedOrderRepo.getAll(userId);
+            if(list == null)
+                return NotFound("there is no unconfirmed orders for this user");
+            return Ok(list);
+        }
+        [HttpGet("/getall")]
+        public IActionResult getAll()
+        {
+            List<UnconfirmedOrderWithProductNameDTO> list = _unconfirmedOrderRepo.getAll();
+            if (list == null)
+                return NotFound("there is no unconfirmed orders");
             return Ok(list);
         }
         [HttpGet("{id}",Name ="getUnconfirmdeOrderById")]
