@@ -15,17 +15,32 @@ namespace Own_Service.Services
         {
             this._commerceContext = commerceContext;
         }
-        public int Add(UnconfirmedOrderDTO unConfirmedOrderdto,string userId)
+        public int Add(UnconfirmedOrderDTO unConfirmedOrderdto, string userId)
         {
-            int customerId=getCustomerId(userId);
-            var product=_commerceContext.Products.Find(unConfirmedOrderdto.productId);
-            if (product==null)
-                return -1;//product not found
+            int customerId = getCustomerId(userId);
 
-            int productQuantity = product.Quantity; //getProductQuantity(unConfirmedOrderdto.productId);
-            if (unConfirmedOrderdto.Quantity > productQuantity)
-                return -2;//in case quantity is not available
+            if (!checkProductAvilability(unConfirmedOrderdto.productId, unConfirmedOrderdto.Quantity))
+            {
+                return -1; //product not found or quantity required exceeded available
+            }
 
+            var unconfirmedOrder = _commerceContext.UnConfirmedOrders.FirstOrDefault(u => u.customerId == customerId && u.PoductId == unConfirmedOrderdto.productId);
+            if (unconfirmedOrder != null)
+            {
+                //this mean the customer add order on product which exist in unconfirmed orders for same caustomer
+                //so we will edite the quantity only
+                var result = Edite(unConfirmedOrderdto.Quantity + unconfirmedOrder.Quantity, unconfirmedOrder.Id);
+                return result == null ? -2 : result.Id; //-2 in case quantity is not available
+            }
+            return CreateNewOrder(customerId, unConfirmedOrderdto);
+        }
+        private bool checkProductAvilability(int productId, int quantity)
+        {
+            var product = _commerceContext.Products.Find(productId);
+            return product != null && product.Quantity >= quantity;
+        }
+        private int  CreateNewOrder(int customerId,UnconfirmedOrderDTO unConfirmedOrderdto)
+        {
             try
             {
                 UnConfirmedOrder unConfirmedOrder = new UnConfirmedOrder
@@ -38,27 +53,28 @@ namespace Own_Service.Services
                 _commerceContext.SaveChanges();
                 return unConfirmedOrder.Id;//return id of the unconfirmedOrder Added
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return -3;
             }
         }
-
-        public int Delete(int id)
+        public int Delete(string userId, int id)
         {
-            var order = _commerceContext.UnConfirmedOrders.Find(id);
+            int customerId = getCustomerId(userId);
+            var order = _commerceContext.UnConfirmedOrders.FirstOrDefault(u => u.customerId == customerId && u.Id == id);
             if (order == null)
                 return 0;
             _commerceContext.UnConfirmedOrders.Remove(order);
             return _commerceContext.SaveChanges();
         }
 
-        public UnconfirmedOrderDTO Edite(UnconfirmedOrderDTO unConfirmedOrder, int id)
+        public UnconfirmedOrderDTO Edite(int quantity, int orderId)
         {
-            var OldunconfOrder = _commerceContext.UnConfirmedOrders.Find(id);
-            if(OldunconfOrder == null)
+            var OldunconfOrder = _commerceContext.UnConfirmedOrders.Find(orderId);
+            var prodQuantity = _commerceContext.Products.Find(OldunconfOrder.PoductId).Quantity;
+            if(OldunconfOrder == null||prodQuantity<quantity)
                 return null;
-            OldunconfOrder.Quantity=unConfirmedOrder.Quantity;
+            OldunconfOrder.Quantity=quantity;
             //OldunconfOrder.PoductId = unConfirmedOrder.productId;
             //OldunconfOrder.Id = unConfirmedOrder.Id;
             _commerceContext.SaveChanges();
@@ -117,6 +133,10 @@ namespace Own_Service.Services
         public int getCustomerId(string userId)
         {
             return _commerceContext.Customers.AsNoTracking().FirstOrDefault(c => c.UserId == userId).Id;
+        }
+        private bool checkQuantity(Product product,int newQuantity)
+        {
+            return newQuantity <= product.Quantity;
         }
     }
 }

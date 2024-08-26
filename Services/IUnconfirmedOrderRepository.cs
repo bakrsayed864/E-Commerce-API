@@ -7,8 +7,8 @@ namespace Own_Service.Services
     public interface IUnconfirmedOrderRepository
     {
         int Add(UnconfirmedOrderDTO unconfirmedOrderdto,string userId);
-        int Delete(int id);
-        UnconfirmedOrderDTO Edite (UnconfirmedOrderDTO unconfirmedOrderdto,int id);
+        int Delete(string userId, int id);
+        UnconfirmedOrderDTO Edite (int quantity, int id);
         List<UnconfirmedOrderWithProductNameDTO> getAll(string userId);
         List<UnconfirmedOrderWithProductNameDTO> getAll();
         UnconfirmedOrderWithProductNameDTO getById(int unconfOrdId);

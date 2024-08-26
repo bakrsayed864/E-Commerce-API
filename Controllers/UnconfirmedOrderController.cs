@@ -63,15 +63,24 @@ namespace Own_Service.Controllers
                 return NotFound();
             return Ok(unconfOrder);
         }
-        [HttpPut("{id}")]
-        public IActionResult Edit(UnconfirmedOrderDTO unconfirmedOrderDTO,int id)
+        [HttpPut]
+        public IActionResult Edit([FromHeader] int newQuantity, [FromHeader] int id)
         {
             if(!ModelState.IsValid)
                 return BadRequest(ModelState);
-            UnconfirmedOrderDTO result = _unconfirmedOrderRepo.Edite(unconfirmedOrderDTO, id);
+            UnconfirmedOrderDTO result = _unconfirmedOrderRepo.Edite(newQuantity, id);
             if (result == null)
-                return NotFound();
+                return BadRequest("product not found or quanttiy exceeded the availabe");
             return Ok(result);
+        }
+        [HttpDelete]
+        public IActionResult Delete([FromHeader] int orderId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            int changes=_unconfirmedOrderRepo.Delete(userId,orderId);
+            if(changes == 0)
+                return NotFound();
+            return NoContent();
         }
     }
 }
