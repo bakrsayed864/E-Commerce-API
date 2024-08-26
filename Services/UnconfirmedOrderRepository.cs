@@ -53,12 +53,19 @@ namespace Own_Service.Services
             return _commerceContext.SaveChanges();
         }
 
-        public UnconfirmedOrderDTO Edite(UnconfirmedOrderDTO oldunConfirmedOrder, int id)
+        public UnconfirmedOrderDTO Edite(UnconfirmedOrderDTO unConfirmedOrder, int id)
         {
-            throw new System.NotImplementedException();
+            var OldunconfOrder = _commerceContext.UnConfirmedOrders.Find(id);
+            if(OldunconfOrder == null)
+                return null;
+            OldunconfOrder.Quantity=unConfirmedOrder.Quantity;
+            //OldunconfOrder.PoductId = unConfirmedOrder.productId;
+            //OldunconfOrder.Id = unConfirmedOrder.Id;
+            _commerceContext.SaveChanges();
+            return new UnconfirmedOrderDTO { Id=OldunconfOrder.Id,Quantity=OldunconfOrder.Quantity,productId=OldunconfOrder.PoductId};
         }
 
-        public List<UnconfirmedOrderWithProductNameDTO> getAll(string userId)
+        public List<UnconfirmedOrderWithProductNameDTO> getAll(string userId)//for specific user
         {
             int customerId = getCustomerId(userId);
             var unconfirmedOrders =_commerceContext.UnConfirmedOrders.Where(o => o.customerId == customerId).Include(u=>u.product).ToList();
@@ -77,7 +84,7 @@ namespace Own_Service.Services
             return DTOlist;
         }
 
-        public List<UnconfirmedOrderWithProductNameDTO> getAll()
+        public List<UnconfirmedOrderWithProductNameDTO> getAll()//for all users
         {
             var unconfirmedOrders = _commerceContext.UnConfirmedOrders.Include(u => u.product).ToList();
             if (unconfirmedOrders.Count == 0)

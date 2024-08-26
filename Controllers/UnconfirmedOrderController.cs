@@ -63,5 +63,15 @@ namespace Own_Service.Controllers
                 return NotFound();
             return Ok(unconfOrder);
         }
+        [HttpPut("{id}")]
+        public IActionResult Edit(UnconfirmedOrderDTO unconfirmedOrderDTO,int id)
+        {
+            if(!ModelState.IsValid)
+                return BadRequest(ModelState);
+            UnconfirmedOrderDTO result = _unconfirmedOrderRepo.Edite(unconfirmedOrderDTO, id);
+            if (result == null)
+                return NotFound();
+            return Ok(result);
+        }
     }
 }
