@@ -8,6 +8,7 @@ namespace Own_Service.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class ProductReviewController : ControllerBase
     {
         private readonly IProductReviewRepository _productReviewRepository;
@@ -58,13 +59,13 @@ namespace Own_Service.Controllers
            
         }
 
-        [HttpDelete("{productId}")]
-        public IActionResult Remove(int productId)
+        [HttpDelete("/removeMyReview")]
+        public IActionResult RemoveCustomerReview([FromHeader] int reviewId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             if(userId == null)
                 return Unauthorized();
-            int changes = _productReviewRepository.DeleteReview(productId, userId);
+            int changes = _productReviewRepository.DeleteReview(reviewId, userId);
             return changes switch
             {
                 0 => Unauthorized(),
@@ -72,5 +73,21 @@ namespace Own_Service.Controllers
                 _ => NoContent(),
             };
         }
+
+        [HttpDelete("/removeReview")]
+        public IActionResult Remove([FromHeader] int reviewId)
+        {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+                return Unauthorized();
+            int changes = _productReviewRepository.DeleteReview(reviewId);
+            return changes switch
+            {
+                0 => Unauthorized(),
+                -1 => NotFound("no product review found for this customer"),
+                _ => NoContent(),
+            };
+        }
+
     }
 }

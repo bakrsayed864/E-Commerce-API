@@ -34,34 +34,19 @@ namespace Own_Service.Services
             }
             return CreateNewOrder(customerId, unConfirmedOrderdto);
         }
-        private bool checkProductAvilability(int productId, int quantity)
-        {
-            var product = _commerceContext.Products.Find(productId);
-            return product != null && product.Quantity >= quantity;
-        }
-        private int  CreateNewOrder(int customerId,UnconfirmedOrderDTO unConfirmedOrderdto)
-        {
-            try
-            {
-                UnConfirmedOrder unConfirmedOrder = new UnConfirmedOrder
-                {
-                    customerId = customerId,
-                    PoductId = unConfirmedOrderdto.productId,
-                    Quantity = unConfirmedOrderdto.Quantity
-                };
-                _commerceContext.UnConfirmedOrders.Add(unConfirmedOrder);
-                _commerceContext.SaveChanges();
-                return unConfirmedOrder.Id;//return id of the unconfirmedOrder Added
-            }
-            catch (Exception ex)
-            {
-                return -3;
-            }
-        }
-        public int Delete(string userId, int id)
+      
+        public int Delete(string userId, int orderId)//user only delete unconfirmed order he made
         {
             int customerId = getCustomerId(userId);
-            var order = _commerceContext.UnConfirmedOrders.FirstOrDefault(u => u.customerId == customerId && u.Id == id);
+            var order = _commerceContext.UnConfirmedOrders.FirstOrDefault(u => u.customerId == customerId && u.Id == orderId);
+            if (order == null)
+                return 0;
+            _commerceContext.UnConfirmedOrders.Remove(order);
+            return _commerceContext.SaveChanges();
+        }
+        public int Delete(int orderId)//will be for admin (admin can delete any unconfirmed order)
+        {
+            var order = _commerceContext.UnConfirmedOrders.FirstOrDefault(u => u.Id == orderId);
             if (order == null)
                 return 0;
             _commerceContext.UnConfirmedOrders.Remove(order);
@@ -100,7 +85,7 @@ namespace Own_Service.Services
             return DTOlist;
         }
 
-        public List<UnconfirmedOrderWithProductNameDTO> getAll()//for all users
+        public List<UnconfirmedOrderWithProductNameDTO> getAll()//for all users(Admin)
         {
             var unconfirmedOrders = _commerceContext.UnConfirmedOrders.Include(u => u.product).ToList();
             if (unconfirmedOrders.Count == 0)
@@ -125,7 +110,7 @@ namespace Own_Service.Services
                 return null;
             return new UnconfirmedOrderWithProductNameDTO { Id=unconfOrder.Id,ProductName=unconfOrder.product.Name,Quantity=unconfOrder.Quantity};
         }
-        public int getProductQuantity(int productId)
+        private int getProductQuantity(int productId)
         {
             int quantity = _commerceContext.Products.Find(productId).Quantity;
             return quantity;
@@ -134,9 +119,30 @@ namespace Own_Service.Services
         {
             return _commerceContext.Customers.AsNoTracking().FirstOrDefault(c => c.UserId == userId).Id;
         }
-        private bool checkQuantity(Product product,int newQuantity)
+
+        private bool checkProductAvilability(int productId, int quantity)
         {
-            return newQuantity <= product.Quantity;
+            var product = _commerceContext.Products.Find(productId);
+            return product != null && product.Quantity >= quantity;
+        }
+        private int CreateNewOrder(int customerId, UnconfirmedOrderDTO unConfirmedOrderdto)
+        {
+            try
+            {
+                UnConfirmedOrder unConfirmedOrder = new UnConfirmedOrder
+                {
+                    customerId = customerId,
+                    PoductId = unConfirmedOrderdto.productId,
+                    Quantity = unConfirmedOrderdto.Quantity
+                };
+                _commerceContext.UnConfirmedOrders.Add(unConfirmedOrder);
+                _commerceContext.SaveChanges();
+                return unConfirmedOrder.Id;//return id of the unconfirmedOrder Added
+            }
+            catch (Exception ex)
+            {
+                return -3;
+            }
         }
     }
 }

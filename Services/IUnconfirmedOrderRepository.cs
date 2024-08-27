@@ -8,6 +8,8 @@ namespace Own_Service.Services
     {
         int Add(UnconfirmedOrderDTO unconfirmedOrderdto,string userId);
         int Delete(string userId, int id);
+        int Delete(int id);
+
         UnconfirmedOrderDTO Edite (int quantity, int id);
         List<UnconfirmedOrderWithProductNameDTO> getAll(string userId);
         List<UnconfirmedOrderWithProductNameDTO> getAll();

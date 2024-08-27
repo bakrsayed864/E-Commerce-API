@@ -39,18 +39,26 @@ namespace Own_Service.Services
             return _commerceDbContext.SaveChanges();
         }
 
-        public int DeleteReview(int productId,string userId)
+        public int DeleteReview(int id,string userId)
         {
             int customerId = getCustomerId(userId);
             if (customerId == 0)
                 return 0;
-            ProductReview productReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.CustomerId == customerId && p.ProductId == productId);
+            ProductReview productReview = _commerceDbContext.productsReviews.FirstOrDefault(p => p.CustomerId == customerId && p.Id == id);
             if (productReview == null)
-                return -1; //product not found
+                return -1; //productReview not found
             _commerceDbContext.productsReviews.Remove(productReview);
             return _commerceDbContext.SaveChanges();
         }
-
+        //this will be for admin
+        public int DeleteReview(int reviewId)
+        {
+            ProductReview productReview = _commerceDbContext.productsReviews.Find(reviewId);
+            if (productReview == null)
+                return -1; //productReview not found
+            _commerceDbContext.productsReviews.Remove(productReview);
+            return _commerceDbContext.SaveChanges();
+        }
         public List<ProductReviewWithCustomerNameDTO> GetAll(int productId,string userId)
         {
             int customerId =getCustomerId(userId);
@@ -62,6 +70,7 @@ namespace Own_Service.Services
             foreach (var review in reviews)
             {
                 productReview=new ProductReviewWithCustomerNameDTO();
+                productReview.Id=review.Id;
                 productReview.CustomerName = review.customer.Name;
                 productReview.Note = review.Notes;
                 productReview.Rate=review.Rate;
@@ -80,7 +89,7 @@ namespace Own_Service.Services
             foreach (var review in reviews)
             {
                 productReview = new ProductReviewWithProductNameDTO();
-                productReview.ProductId = review.ProductId;
+                productReview.Id=review.Id;
                 productReview.ProductName = review.product.Name;
                 productReview.Note = review.Notes;
                 productReview.Rate = review.Rate;

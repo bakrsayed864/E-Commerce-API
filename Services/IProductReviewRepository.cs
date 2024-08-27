@@ -12,7 +12,8 @@ namespace Own_Service.Services
         ProductReview GetById(int productId,string userId); //review get per product per customer (customer id gets from the loged customer)
         int AddReview(ProductReviewDTO productDto, int productId, string usermerId); 
         int UpdateReview(ProductReviewDTO productDto, int productId,string customerId); 
-        int DeleteReview(int productId,string userId); 
+        int DeleteReview(int reviewId,string userId);
+        int DeleteReview(int reviewId);
         int getCustomerId(string id); 
     }
 }

@@ -73,12 +73,20 @@ namespace Own_Service.Controllers
                 return BadRequest("product not found or quanttiy exceeded the availabe");
             return Ok(result);
         }
-        [HttpDelete]
-        public IActionResult Delete([FromHeader] int orderId)
+        [HttpDelete("/deleteUserOrder")]
+        public IActionResult DeleteUserOrder([FromHeader] int orderId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             int changes=_unconfirmedOrderRepo.Delete(userId,orderId);
             if(changes == 0)
+                return NotFound();
+            return NoContent();
+        }
+        [HttpDelete("/deleteOrder")]//for admin
+        public IActionResult Delete([FromHeader] int orderId)
+        {
+            int changes = _unconfirmedOrderRepo.Delete(orderId);
+            if (changes == 0)
                 return NotFound();
             return NoContent();
         }
