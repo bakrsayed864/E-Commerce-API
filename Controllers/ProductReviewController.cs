@@ -63,9 +63,15 @@ namespace Own_Service.Controllers
         public IActionResult RemoveCustomerReview([FromHeader] int reviewId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if(userId == null)
-                return Unauthorized();
-            int changes = _productReviewRepository.DeleteReview(reviewId, userId);
+            int changes;
+            if (User.IsInRole("Admin"))
+            {
+                changes = _productReviewRepository.DeleteReview(reviewId);
+            }
+            else
+            {
+                changes = _productReviewRepository.DeleteReview(reviewId, userId);
+            }
             return changes switch
             {
                 0 => Unauthorized(),
