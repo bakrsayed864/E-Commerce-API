@@ -38,7 +38,8 @@ namespace Own_Service.Controllers
                 _ => Created(url,unconfirmedOrderDTO),
             };
         }
-        [HttpGet]
+
+        [HttpGet("/getUserUnconfirmedOrders")]
         public IActionResult getUserUncofirmedOrders()
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -47,7 +48,7 @@ namespace Own_Service.Controllers
                 return NotFound("there is no unconfirmed orders for this user");
             return Ok(list);
         }
-        [HttpGet("/getall")]
+        [HttpGet("/getallUsersUnconfirmedOrders")]
         public IActionResult getAll()
         {
             List<UnconfirmedOrderWithProductNameDTO> list = _unconfirmedOrderRepo.getAll();
@@ -55,8 +56,8 @@ namespace Own_Service.Controllers
                 return NotFound("there is no unconfirmed orders");
             return Ok(list);
         }
-        [HttpGet("{id}",Name ="getUnconfirmdeOrderById")]
-        public IActionResult getById(int id)
+        [HttpGet("/getSpecific",Name ="getUnconfirmdeOrderById")]
+        public IActionResult getById([FromHeader]int id)
         {
             var unconfOrder=_unconfirmedOrderRepo.getById(id);
             if (unconfOrder == null)
@@ -73,22 +74,23 @@ namespace Own_Service.Controllers
                 return BadRequest("product not found or quanttiy exceeded the availabe");
             return Ok(result);
         }
-        [HttpDelete("/deleteUserOrder")]
+        [HttpDelete]
         public IActionResult DeleteUserOrder([FromHeader] int orderId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            int changes=_unconfirmedOrderRepo.Delete(userId,orderId);
+            int changes;
+            if (User.IsInRole("Admin"))
+            {
+                changes = _unconfirmedOrderRepo.Delete(orderId);
+            }
+            else
+            {
+                changes = _unconfirmedOrderRepo.Delete(userId, orderId);
+            }
             if(changes == 0)
                 return NotFound();
             return NoContent();
         }
-        [HttpDelete("/deleteOrder")]//for admin
-        public IActionResult Delete([FromHeader] int orderId)
-        {
-            int changes = _unconfirmedOrderRepo.Delete(orderId);
-            if (changes == 0)
-                return NotFound();
-            return NoContent();
-        }
+       
     }
 }

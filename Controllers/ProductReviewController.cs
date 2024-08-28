@@ -59,7 +59,7 @@ namespace Own_Service.Controllers
            
         }
 
-        [HttpDelete("/removeMyReview")]
+        [HttpDelete]
         public IActionResult RemoveCustomerReview([FromHeader] int reviewId)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -80,20 +80,7 @@ namespace Own_Service.Controllers
             };
         }
 
-        [HttpDelete("/removeReview")]
-        public IActionResult Remove([FromHeader] int reviewId)
-        {
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-                return Unauthorized();
-            int changes = _productReviewRepository.DeleteReview(reviewId);
-            return changes switch
-            {
-                0 => Unauthorized(),
-                -1 => NotFound("no product review found for this customer"),
-                _ => NoContent(),
-            };
-        }
+       
 
     }
 }
