@@ -14,5 +14,6 @@ namespace Own_Service.Services
         List<UnconfirmedOrderWithProductNameDTO> getAll(string userId);
         List<UnconfirmedOrderWithProductNameDTO> getAll();
         UnconfirmedOrderWithProductNameDTO getById(int unconfOrdId);
+        double getTotalPrice(string userId);
     }
 }

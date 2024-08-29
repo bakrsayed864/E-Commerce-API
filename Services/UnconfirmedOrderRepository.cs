@@ -115,6 +115,19 @@ namespace Own_Service.Services
             int quantity = _commerceContext.Products.Find(productId).Quantity;
             return quantity;
         }
+
+        public double getTotalPrice(string userId)
+        {
+            int customerId = getCustomerId(userId);
+            double totalSum = _commerceContext.Products
+                .Join(_commerceContext.UnConfirmedOrders,
+                        p => p.Id,
+                        o => o.PoductId,
+                        (p, o) => new { p.Price, o.Quantity, o.customerId })
+                .Where(x => x.customerId == customerId)
+                .Sum(x => x.Price * x.Quantity);
+            return totalSum;
+        }
         public int getCustomerId(string userId)
         {
             return _commerceContext.Customers.AsNoTracking().FirstOrDefault(c => c.UserId == userId).Id;

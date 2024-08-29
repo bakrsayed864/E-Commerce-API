@@ -64,6 +64,14 @@ namespace Own_Service.Controllers
                 return NotFound();
             return Ok(unconfOrder);
         }
+
+        [HttpGet("/getTotalPrice")]
+        public IActionResult getTotaPrice()
+        {
+            string userId=User.FindFirstValue(ClaimTypes.NameIdentifier);
+            double price=_unconfirmedOrderRepo.getTotalPrice(userId);
+            return Ok(price);
+        }
         [HttpPut]
         public IActionResult Edit([FromHeader] int newQuantity, [FromHeader] int id)
         {
