@@ -2,7 +2,6 @@
 {
     public interface IOrderRepository
     {
-        int ConfirmOrder(int UnconfirmedOrderId);
-
+        int ConfirmOrder(string userId,string Address);
     }
 }
