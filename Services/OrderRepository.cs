@@ -17,10 +17,13 @@ namespace Own_Service.Services
         public int ConfirmOrder(string userId,string Address)
         {
             int customerId = getCustomerId(userId);
+            //get user unconfirmed orders 
             var unConfirmedOrdersList = _commerceDbContext.UnConfirmedOrders.Where(u => u.customerId == customerId).ToList();
+            //check if all unconfirmed orders quantities is available
             bool isAvailabe=checkQuantityAvailability(unConfirmedOrdersList);
             if(!isAvailabe)
                 return 0;
+            //confirm order and remove them from unconfirmed orders
             int changes = orderDone(unConfirmedOrdersList, Address, customerId);
             deleteCustomerUnconfirmedOrders(customerId);
             return changes;
