@@ -11,9 +11,10 @@ namespace Own_Service.Services
         int Delete(int id);
 
         UnconfirmedOrderDTO Edite (int quantity, int id);
+        UnconfirmedOrderDTO Edite(int quantity, UnConfirmedOrder OldunconfOrder);
         List<UnconfirmedOrderWithProductNameDTO> getAll(string userId);
         List<UnconfirmedOrderWithProductNameDTO> getAll();
-        UnconfirmedOrderWithProductNameDTO getById(int unconfOrdId);
+        UnConfirmedOrder getById(int unconfOrdId);
         double getTotalPrice(string userId);
     }
 }

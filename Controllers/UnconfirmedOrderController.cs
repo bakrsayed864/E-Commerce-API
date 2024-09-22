@@ -24,9 +24,7 @@ namespace Own_Service.Controllers
         public IActionResult Create(UnconfirmedOrderDTO unconfirmedOrderDTO)
         {
             string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
-                return Unauthorized();
-            else if(!ModelState.IsValid) 
+            if(!ModelState.IsValid) 
                 return BadRequest(ModelState);
             int changes = _unconfirmedOrderRepo.Add(unconfirmedOrderDTO,userId);
             string url = Url.Link("getUnconfirmdeOrderById", new { id=changes });

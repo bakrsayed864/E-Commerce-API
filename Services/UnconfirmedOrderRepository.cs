@@ -29,7 +29,7 @@ namespace Own_Service.Services
             {
                 //this mean the customer add order on product which exist in unconfirmed orders for same caustomer
                 //so we will edite the quantity only
-                var result = Edite(unConfirmedOrderdto.Quantity + unconfirmedOrder.Quantity, unconfirmedOrder.Id);
+                var result = Edite(unConfirmedOrderdto.Quantity + unconfirmedOrder.Quantity, unconfirmedOrder);
                 return result == null ? -2 : result.Id; //-2 in case quantity is not available
             }
             return CreateNewOrder(customerId, unConfirmedOrderdto);
@@ -65,7 +65,15 @@ namespace Own_Service.Services
             _commerceContext.SaveChanges();
             return new UnconfirmedOrderDTO { Id=OldunconfOrder.Id,Quantity=OldunconfOrder.Quantity,productId=OldunconfOrder.PoductId};
         }
-
+        public UnconfirmedOrderDTO Edite(int quantity, UnConfirmedOrder OldunconfOrder)
+        {
+            var prodQuantity = _commerceContext.Products.Find(OldunconfOrder.PoductId).Quantity;
+            if (prodQuantity < quantity)
+                return null;
+            OldunconfOrder.Quantity = quantity;
+            _commerceContext.SaveChanges();
+            return new UnconfirmedOrderDTO { Id = OldunconfOrder.Id, Quantity = OldunconfOrder.Quantity, productId = OldunconfOrder.PoductId };
+        }
         public List<UnconfirmedOrderWithProductNameDTO> getAll(string userId)//for specific user
         {
             int customerId = getCustomerId(userId);
@@ -103,13 +111,14 @@ namespace Own_Service.Services
             return DTOlist;
         }
 
-        public UnconfirmedOrderWithProductNameDTO getById(int unconfOrdId)
+        public UnConfirmedOrder getById(int unconfOrdId)
         {
             var unconfOrder = _commerceContext.UnConfirmedOrders.Find(unconfOrdId);
             if (unconfOrder == null)
                 return null;
-            return new UnconfirmedOrderWithProductNameDTO { Id=unconfOrder.Id,ProductName=unconfOrder.product.Name,Quantity=unconfOrder.Quantity};
+            return unconfOrder;
         }
+        
         private int getProductQuantity(int productId)
         {
             int quantity = _commerceContext.Products.Find(productId).Quantity;
@@ -132,7 +141,6 @@ namespace Own_Service.Services
         {
             return _commerceContext.Customers.AsNoTracking().FirstOrDefault(c => c.UserId == userId).Id;
         }
-
         private bool checkProductAvilability(int productId, int quantity)
         {
             var product = _commerceContext.Products.Find(productId);
