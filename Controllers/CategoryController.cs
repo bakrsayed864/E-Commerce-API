@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Own_Service.DTO;
 using Own_Service.Models;
@@ -18,6 +19,7 @@ namespace Own_Service.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult GetAll()
         {
             var list=_categoryRepository.getAll();
@@ -59,6 +61,7 @@ namespace Own_Service.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles ="Admin")]
         public IActionResult Delet(int id)
         {
             int changes=_categoryRepository.Delet(id);

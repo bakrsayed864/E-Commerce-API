@@ -24,7 +24,7 @@ namespace Own_Service.Controllers
         private readonly IConfiguration config;
         private readonly ICustomerRepository _customerRepository;
 
-        public AccountController(UserManager<ApplicationUser> _userManager,IConfiguration config,CommerceDbContext commerceDbContext,ICustomerRepository accountRepository)
+        public AccountController(UserManager<ApplicationUser> _userManager,IConfiguration config,ICustomerRepository accountRepository)
         {
             this.userManager = _userManager;
             this.config = config;
@@ -34,23 +34,20 @@ namespace Own_Service.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterUserDTO registerUserDTO)
         {
-            if(ModelState.IsValid)
+            if(!ModelState.IsValid)
+                return BadRequest(ModelState);
+            //save //use identity service layer (usermanager)
+            //conver DTO to ApplicationUser
+            ApplicationUser user = new ApplicationUser();
+            user.UserName = registerUserDTO.UserName;
+            user.Email = registerUserDTO.Email;
+            IdentityResult result = await userManager.CreateAsync(user, registerUserDTO.Password);
+            if (result.Succeeded)
             {
-                //save //use identity service layer (usermanager)
-                //conver DTO to ApplicationUser
-                ApplicationUser user = new ApplicationUser();
-                user.UserName = registerUserDTO.UserName;
-                user.Email = registerUserDTO.Email;
-                IdentityResult result =await userManager.CreateAsync(user, registerUserDTO.Password);
-                if (result.Succeeded)
-                {
-                    //
-                    _customerRepository.Create(registerUserDTO,user.Id);
-                    //
-                    return Ok("Account Created successfully");
-                }
-                else
-                    return BadRequest(ModelState);
+                //
+                _customerRepository.Create(registerUserDTO, user.Id);
+                //
+                return Ok("Account Created successfully");
             }
             return BadRequest(ModelState);
         }
@@ -71,7 +68,7 @@ namespace Own_Service.Controllers
             claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
             claims.Add(new Claim(ClaimTypes.Name, user.UserName));
             claims.Add(new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()));
-            //get roles 
+            //get roles
             var roles=await userManager.GetRolesAsync(user);
             foreach(var itemRole in roles)
             {

@@ -9,7 +9,11 @@ namespace Own_Service.Services
     {
         List<CustomerDTO> getAll();
         CustomerDTO getById(int id);
-        int Update(CustomerDTO customerDTO,int id);
+        int Update(CustomerDTO customerDTO,int id)
+        {
+            Customer customer = new Customer();
+            return 1;
+        }
         int Delete(int id);
         int Create(RegisterUserDTO registerUserDTO, string id);
     }
