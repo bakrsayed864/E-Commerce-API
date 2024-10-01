@@ -23,12 +23,14 @@ namespace Own_Service.Controllers
         private readonly UserManager<ApplicationUser> userManager;
         private readonly IConfiguration config;
         private readonly ICustomerRepository _customerRepository;
+        private readonly ITokenService tokenService;
 
-        public AccountController(UserManager<ApplicationUser> _userManager,IConfiguration config,ICustomerRepository accountRepository)
+        public AccountController(UserManager<ApplicationUser> _userManager, IConfiguration config, ICustomerRepository accountRepository, ITokenService tokenService)
         {
             this.userManager = _userManager;
             this.config = config;
             this._customerRepository = accountRepository;
+            this.tokenService = tokenService;
         }
         //Create new Account
         [HttpPost("register")]
@@ -63,31 +65,13 @@ namespace Own_Service.Controllers
             bool check = await userManager.CheckPasswordAsync(user, logedUser.Password);
             if (user == null || !check)
                 return Unauthorized();
-            //claims token
-            var claims = new List<Claim>();
-            claims.Add(new Claim(ClaimTypes.NameIdentifier, user.Id));
-            claims.Add(new Claim(ClaimTypes.Name, user.UserName));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString()));
-            //get roles
-            var roles=await userManager.GetRolesAsync(user);
-            foreach(var itemRole in roles)
-            {
-                claims.Add(new Claim(ClaimTypes.Role, itemRole));
-            }
-            SecurityKey signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:key"]));
-            SigningCredentials singnCred = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
-            JwtSecurityToken token = new JwtSecurityToken(
-                issuer: config["JWT:validProvider"], //url web api
-                audience: config["JWT:ValidConsumer"], //url consumer 
-                claims:claims,
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: singnCred
-                );
+            //creat Token
+            JwtSecurityToken token = await tokenService.CreateToken(user);
             return Ok(new
             {
-                token = new JwtSecurityTokenHandler().WriteToken(token),
+                Owntoken = new JwtSecurityTokenHandler().WriteToken(token),
                 expiration = token.ValidTo,
-            });
+            }) ;
         }
     }
 }
