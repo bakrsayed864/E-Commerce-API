@@ -270,9 +270,10 @@ D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\stati
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.E_Commerce API.props
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.E_Commerce API.props
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.RazorTargetAssemblyInfo.cache
-D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.csproj.CopyComplete
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.dll
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\refint\E_Commerce API.dll
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.pdb
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.genruntimeconfig.cache
 D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\ref\E_Commerce API.dll
+D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commerce API.sourcelink.json
+D:\college\projects\Git_Hub\E_Commerce API\E-Commerce-API\obj\Debug\net5.0\E_Commer.291D3580.Up2Date

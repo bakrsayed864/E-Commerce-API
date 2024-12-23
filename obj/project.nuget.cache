@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fVbxOPk947bc8Kjt7l1JQpAFPiGoZVLfoBALbz/D9xJX3muoen05S8mxheUgygCEztijtTDr+C2TeMbbhxUU6A==",
+  "dgSpecHash": "tq2qaK6cJwE=",
   "success": true,
   "projectFilePath": "D:\\college\\projects\\Git_Hub\\E_Commerce API\\E-Commerce-API\\E_Commerce API.csproj",
   "expectedPackageFiles": [
@@ -148,5 +148,12 @@
     "C:\\Users\\laptop\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\laptop\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json."
+    }
+  ]
 }
