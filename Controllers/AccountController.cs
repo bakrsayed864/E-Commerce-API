@@ -1,17 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Tokens;
 using Own_Service.DTO;
 using Own_Service.Models;
 using Own_Service.Services;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Own_Service.Controllers
@@ -36,7 +29,7 @@ namespace Own_Service.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register(RegisterUserDTO registerUserDTO)
         {
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             //save //use identity service layer (usermanager)
             //conver DTO to ApplicationUser
@@ -71,7 +64,7 @@ namespace Own_Service.Controllers
             {
                 Owntoken = new JwtSecurityTokenHandler().WriteToken(token),
                 expiration = token.ValidTo,
-            }) ;
+            });
         }
     }
 }
